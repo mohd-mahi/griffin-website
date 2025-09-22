@@ -3,6 +3,9 @@ import React from "react";
 const IntroSec = () => {
   return (
     <section className="intro-section padding-section ">
+      <div className="intro-bottom-bg">
+        <img src="/images/ribbons-bg.png" alt="section-bg" />
+      </div>
       <div className="container">
         <div className="row flex-column-reverse flex-lg-row g-4">
           <div className="col-lg-6">

@@ -15,8 +15,8 @@ const Home = () => {
         cl="home"
       />
       <IntroSec />
-      <LandmarkSec />
-      <FounderSec />
+      {/* <LandmarkSec /> */}
+      {/* <FounderSec /> */}
     </>
   );
 };

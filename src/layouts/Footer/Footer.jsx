@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="footer-item">
               <h3>
                 <img src="/images/gold-ball-icon.png" alt="" />
-                FInd
+                Find
               </h3>
               <ul className="footer-nav-item">
                 <li>
