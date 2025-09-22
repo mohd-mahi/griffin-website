@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./layouts/Footer/Footer";
 import Atlantiis from "./pages/Atlantiis/Atlantiis";
+import OtherProject from "./pages/OtherProject/OtherProject";
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
       <Route path="/" element={<Home />}></Route>
       <Route path="/atlantiis" element={<Atlantiis />}></Route>
       <Route path="/about-us" element={<AboutUs />}></Route>
+      <Route path="/other-projects" element={<OtherProject />}></Route>
     </Routes>
   );
 }

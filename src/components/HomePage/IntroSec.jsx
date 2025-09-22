@@ -3,13 +3,13 @@ import React from "react";
 const IntroSec = () => {
   return (
     <section className="intro-section padding-section ">
-      <div className="intro-bottom-bg">
-        <img src="/images/ribbons-bg.png" alt="section-bg" />
-      </div>
       <div className="container">
         <div className="row flex-column-reverse flex-lg-row g-4">
           <div className="col-lg-6">
-            <div className="intro-content">
+            <div className="intro-content position-relative">
+              <div className="intro-bottom-bg-1">
+                <img src="/images/assets-1.png" alt="section-bg" />
+              </div>
               <h2 className="sub-title" data-aos="fade-up" data-aos-delay="250">
                 Introducing the crown <br /> jewel of Sangli
               </h2>
@@ -22,7 +22,7 @@ const IntroSec = () => {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="intro-img-container">
+            <div className="intro-img-container position-relative">
               <div className="intro-bg"></div>
               <div className="intro-img-wrapper">
                 <div
@@ -41,6 +41,9 @@ const IntroSec = () => {
                     <img src="/images/home-img-2.jpg" alt="img-two" />
                   </div>
                 </div>
+              </div>
+              <div className="intro-bottom-bg-2">
+                <img src="/images/assets-2.png" alt="section-bg" />
               </div>
             </div>
           </div>
