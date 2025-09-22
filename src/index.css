@@ -356,12 +356,12 @@ h1 {
 .founder-section .row.px::before {
     content: "";
     width: 100%;
-    height: calc(100% - 30px);
-    box-shadow:
-        0 4px 0px rgba(227, 176, 75, 0.6),
-        0 -4px 0px rgba(252, 170, 8, 0.2),
-        -4px 0 0px rgba(252, 170, 8, 0.2),
-        4px 0 0px rgba(252, 170, 8, 0.2);
+    height: calc(100% - 20px);
+    border: 3px solid;
+    border-top-color: rgba(252, 170, 8, 0.2);
+    border-right-color: rgba(252, 170, 8, 0.2);
+    border-left-color: rgba(252, 170, 8, 0.2);
+    border-bottom-color: rgba(227, 176, 75, 0.6);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -443,7 +443,8 @@ h1 {
 
 @media (max-width:575px) {
     .founder-section .row.px::before {
-        height: calc(100%-15px);
+        height: calc(100%-10px);
+
     }
 }
 
