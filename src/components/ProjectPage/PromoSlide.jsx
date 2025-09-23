@@ -21,10 +21,17 @@ const PromoSlide = () => {
       url: "images/project-page/atlantiis-porch.jpg",
       title: "Office Spaces",
     },
+    {
+      url: "images/project-page/atlantiis-porch.jpg",
+      title: "Office Spaces",
+    },
+    {
+      url: "images/project-page/atlantiis-porch.jpg",
+      title: "Office Spaces",
+    },
   ];
   const [slideWidth, setSlideWidth] = useState(250);
   const slideRef = useRef(null);
-  // console.log(slideWidth);
   useEffect(() => {
     const updateSlideWidth = () => {
       if (slideRef.current) {
@@ -47,9 +54,6 @@ const PromoSlide = () => {
   }, []);
   const pagination = {
     clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
   };
   return (
     <>

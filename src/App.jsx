@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Lenis from "lenis";
 import Aos from "aos";
@@ -8,6 +8,8 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./layouts/Footer/Footer";
 import Atlantiis from "./pages/Atlantiis/Atlantiis";
 import OtherProject from "./pages/OtherProject/OtherProject";
+import LoaderContext from "./context/LoaderContext";
+import Loader from "./components/Loader";
 
 function AppRoutes() {
   return (
@@ -23,20 +25,22 @@ function AppRoutes() {
 const App = () => {
   const lenisRef = useRef();
 
+  const { mounted } = useContext(LoaderContext);
+
   useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      offset: 100,
-    });
-    Aos.refresh();
-  }, []);
+    if (mounted) {
+      Aos.init({
+        duration: 1000,
+        easing: "ease-out-cubic",
+        offset: 100,
+      });
+    }
+  }, [mounted]);
 
   useEffect(() => {
     function easeInOutQuint(x) {
       return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2;
     }
-
     const lenis = new Lenis({
       autoRaf: false,
       duration: 1,
@@ -44,11 +48,11 @@ const App = () => {
     });
 
     window.lenis = lenis;
+
     lenisRef.current = lenis;
 
     function raf(time) {
       lenis.raf(time);
-      Aos.refresh();
       requestAnimationFrame(raf);
     }
 
@@ -58,13 +62,18 @@ const App = () => {
       lenis.destroy();
     };
   }, []);
+
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <AppRoutes />
-        <Footer />
-      </BrowserRouter>
+      {!mounted ? (
+        <Loader />
+      ) : (
+        <>
+          <Header />
+          <AppRoutes />
+          <Footer />
+        </>
+      )}
     </>
   );
 };

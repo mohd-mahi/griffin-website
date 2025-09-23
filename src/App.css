@@ -437,8 +437,10 @@ span.line.three.active {
   margin-inline: 6px !important;
 }
 
-.feature-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  opacity: 1;
+
+
+span.swiper-pagination-bullet {
+  display: none;
 }
 
 .feature-wrapper .swiper-button-prev,
@@ -489,4 +491,58 @@ span.line.three.active {
     width: calc(var(--width) * 2) !important;
   }
 
+}
+
+
+/* ______________loader_______________ */
+.loader-wrapper.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transform-origin: top;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+.loader-wrapper.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.2s ease;
+}
+
+.loader {
+  padding: 30px;
+}
+
+.loader>img {
+  max-width: 90px;
+  display: block;
+  object-fit: cover;
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
 }
