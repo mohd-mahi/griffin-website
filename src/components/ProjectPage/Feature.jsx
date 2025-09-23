@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { useEffect, useRef, useState } from "react";
 
-const PromoSlide = () => {
+const Feature = () => {
   const data = [
     {
       url: "images/project-page/atlantiis-lobby.jpg",
@@ -18,15 +18,15 @@ const PromoSlide = () => {
       title: "Office Spaces",
     },
     {
-      url: "images/project-page/atlantiis-porch.jpg",
-      title: "Office Spaces",
+      url: "images/project-page/atlantiis-lobby.jpg",
+      title: "Grand Entrance Lobby",
     },
     {
-      url: "images/project-page/atlantiis-porch.jpg",
-      title: "Office Spaces",
+      url: "images/project-page/atlantiis-ext.jpg",
+      title: "Prime Location",
     },
     {
-      url: "images/project-page/atlantiis-porch.jpg",
+      url: "images/project-page/atlantiis-office.jpg",
       title: "Office Spaces",
     },
   ];
@@ -57,17 +57,21 @@ const PromoSlide = () => {
   };
   return (
     <>
-      <section className="feature-section section-padding less pb-0">
-        <div className="container">
+      <section className="feature-section padding-section pt-0 ">
+        <div className="container position-relative padding-section less pb-0 ">
           <div className="feature-heading ">
-            <h2 className="heading">FEATURED PROJECTS</h2>
+            <h2 className="sub-title">
+              {" "}
+              The benchmark of <br /> brilliance
+            </h2>
           </div>
-          <div className="feature-wrapper">
+          <div className="feature-wrapper" ref={slideRef}>
             <Swiper
               slidesPerView={1.2}
               pagination={pagination}
               navigation={true}
-              speed={2000}
+              loop={true}
+              speed={1500}
               modules={[Pagination, Navigation]}
               className="mySwiper"
               breakpoints={{
@@ -91,8 +95,8 @@ const PromoSlide = () => {
                   >
                     <div
                       className="feature-card"
-                      data-aos={item.types}
-                      data-aos-delay={item.delay}
+                      data-aos="fade-up"
+                      data-aos-delay={i * 150 + 600}
                     >
                       <a
                         href="#"
@@ -114,4 +118,4 @@ const PromoSlide = () => {
     </>
   );
 };
-export default PromoSlide;
+export default Feature;

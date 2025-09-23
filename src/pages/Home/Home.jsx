@@ -12,7 +12,7 @@ const Home = () => {
         title="THAT SHAPES SKYLINES."
         hl2="VISION"
         title2="THAT BUILDS LEGACIES."
-        cl="home"
+        cl="images/homepage-bg.jpg"
       />
       <IntroSec />
       <LandmarkSec />

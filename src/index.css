@@ -2,15 +2,42 @@
     width: 100%;
     height: 100vh;
     min-height: 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
-.hero-section.home {
-    background-image: url("/images/homepage-bg.jpg");
+.hero-img-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
+
+.hero-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: kenburns 20s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+@keyframes kenburns {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+
+    50% {
+        transform: scale(1.3) translate(-5%, -5%);
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+
 
 .hero-section .container {
     height: 100%;
@@ -46,6 +73,7 @@ h1 {
     line-height: 1.2;
     text-transform: uppercase;
     color: #fff;
+    position: relative;
 }
 
 .highlight {
@@ -658,7 +686,7 @@ h1 {
     content: "";
     width: 70%;
     height: 100%;
-    background: red;
+    background: #e2c861;
     position: absolute;
     left: 30px;
     top: -30px;
@@ -692,8 +720,8 @@ h1 {
 }
 
 .dot-image {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 90%;
 }
@@ -731,4 +759,223 @@ h1 {
     }
 }
 
-@media (max-width:767px) {}
+
+/* -------------------feature_________________-- */
+.feature-section {
+    width: 100%;
+    background-color: #fff;
+}
+
+.feature-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.feature-heading h2 {
+    margin-bottom: 0;
+}
+
+.feature-content {
+    height: 530px;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    background-color: #00000060;
+    color: #fff;
+    padding: 25px;
+    gap: 30px;
+    text-decoration: none;
+    transition: all .3s ease-in;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-content::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.feature-content:hover::before {
+    opacity: 0;
+}
+
+
+.feature-card {
+    position: relative;
+    transition: all 03s ease-in;
+}
+
+.feature-wrapper {
+    padding-bottom: 54px;
+    overflow: hidden;
+    position: relative;
+}
+
+.promo-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.promo-title h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
+.feature-wrapper .swiper {
+    overflow: visible;
+    position: static !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--theme-color-one);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev {
+    transform: scale(-1);
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 8px;
+    height: 14px;
+
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    right: 35px;
+}
+
+
+
+/* minwidth feature section  */
+@media (min-width:991.98px) {
+    .feature-wrapper .swiper-slide.swiper-slide-active {
+        width: calc(var(--width) * 2) !important;
+    }
+
+    .feature-wrapper .swiper-wrapper:hover .swiper-slide.swiper-slide-active {
+        width: var(--width) !important;
+    }
+
+    .feature-wrapper .swiper .swiper-slide.swiper-slide-active,
+    .feature-wrapper .swiper .swiper-slide:hover,
+    .feature-wrapper .swiper:hover .swiper-slide.swiper-slide-active:hover {
+        width: calc(var(--width) * 2) !important;
+    }
+
+}
+
+@media (max-width:992px) {
+    .feature-heading {
+        margin-bottom: 50px;
+    }
+}
+
+/* banner section  */
+.banner-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("/images/project-page/atlantiis-feature-area-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.banner-img-box {
+    width: 80%;
+}
+
+.fea-dot {
+    width: 30px;
+    height: 30px;
+}
+
+.banner-content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.banner-content a span.download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e2c861;
+    color: var(--theme-color-one);
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* amenties section  */
+.amenties-section {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom left, #111839 0%, #222c5f 49%, #111839 100%);
+    color: #fff;
+}
+
+.card-image {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.amenties-card {
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+/* ____________________architech section________________- */
+.architech-info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
