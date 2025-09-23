@@ -25,7 +25,7 @@ const Footer = () => {
                 <img src="/images/gold-ball-icon.png" alt="" />
                 Explore
               </h3>
-              <ul className="footer-nav-item">
+              <ul className="footer-nav-item ib">
                 <li>
                   <NavLink to="?">Atlantiis</NavLink>
                 </li>
