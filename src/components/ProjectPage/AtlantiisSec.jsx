@@ -7,8 +7,16 @@ const AtlantiisSec = () => {
         <div className="top-bg-container">
           <img src="/images/project-page/prj-ribbons-bg.png" alt="" />
         </div>
-        <div className="image-container">
-          <img src="/images/building-cut-bg.png" alt="building-img" />
+        <div
+          className="image-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="/images/building-cut-bg.png"
+            alt="building-img"
+            className="img"
+          />
           <div className="atlantic-text-wrapper">
             <div className="container">
               <div className="row">

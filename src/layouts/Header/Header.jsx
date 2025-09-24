@@ -1,49 +1,44 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const menuData = [
-    {
-      label: "Home",
-      path: "/",
-    },
-    {
-      label: "Atlantiis",
-      path: "/atlantis",
-    },
-    {
-      label: "About Us",
-      path: "/about-us",
-    },
-    {
-      label: "Other Projects",
-      path: "/other-projects",
-    },
-    {
-      label: "Media",
-      path: "/media",
-    },
-    {
-      label: "Contact",
-      path: "/contact",
-    },
-    // {
-    //   label: "Client & Collaborations",
-    //   path: "/clients",
-    // },
-    // {
-    //   label: "Resources",
-    //   path: "/resources",
-    // },
-  ];
   const [open, isOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+
+  const menuData = [
+    { label: "Home", path: "/" },
+    { label: "Atlantiis", path: "/atlantis" },
+    { label: "About Us", path: "/about-us" },
+    { label: "Other Projects", path: "/other-projects" },
+    { label: "Media", path: "/media" },
+    { label: "Contact", path: "/contact" },
+  ];
+
   useEffect(() => {
     isOpen(false);
   }, [location]);
 
+  const headerRef = useRef(null);
+
+  // Scroll effect
+  useEffect(() => {
+    const headerHeight = headerRef.current?.offsetHeight || 0;
+
+    const scrollFunction = () => {
+      if (window.pageYOffset > headerHeight) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", scrollFunction);
+    return () => window.removeEventListener("scroll", scrollFunction);
+  }, []);
+
   return (
-    <header className="header">
+    <header ref={headerRef} className={`header ${isSticky ? "sticky" : ""}`}>
       <div
         className={`overlay ${open ? "active" : ""}`}
         onClick={() => isOpen(!open)}
@@ -71,7 +66,6 @@ const Header = () => {
               onClick={() => isOpen(!open)}
             >
               <span className={`line one ${open ? "active" : ""}`}></span>
-
               <span className={`line two ${open ? "active" : ""}`}></span>
               <span className={`line three ${open ? "active" : ""}`}></span>
             </button>

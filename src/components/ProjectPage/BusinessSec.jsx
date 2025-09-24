@@ -5,7 +5,7 @@ const BusinessSec = () => {
     <section className="business-section padding-section">
       <div className="container">
         <div className="row ">
-          <div className="col-lg-6 position-relative  ">
+          <div className="col-lg-6 position-relative">
             <div className="business-image-container">
               <img
                 src="/images/project-page/atlantiis-prj-01.jpg"

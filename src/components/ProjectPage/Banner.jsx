@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section className="banner-section">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row banner-row">
           <div className="col-6">
             <div className="banner-content">
               <h2 className="sub-title">
@@ -15,7 +15,7 @@ const Banner = () => {
               </a>
             </div>
           </div>
-          <div className="col-6 position-relative d-flex justify-content-between">
+          <div className="col-6 position-relative d-flex justify-content-between align align-self-end align-self-sm-auto">
             <div className="banner-img-box">
               <img
                 src="/images/project-page/atlantiis-circle-logo.png"

@@ -17,7 +17,7 @@
 
 .hero-img-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     animation: kenburns 20s ease-in-out infinite;
     transform-origin: center center;
@@ -616,6 +616,7 @@ h1 {
     .alt-content {
         margin-left: auto;
         margin-right: 0;
+        align-items: end;
     }
 
     .alt-content h2 {
@@ -629,11 +630,51 @@ h1 {
     .alt-content h4 {
         font-size: 1.2rem;
     }
+
+    .image-container .img {
+        min-height: 450px;
+    }
 }
 
 @media(max-width:767px) {
     .alt-content {
         align-items: end;
+    }
+
+    .alt-content h2 {
+        font-size: 2rem;
+    }
+
+    .alt-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .alt-content h4 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:575px) {
+    .alt-content {
+        max-width: 220px;
+    }
+
+    .alt-des {
+        padding: 6px 0;
+    }
+
+    .alt-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .alt-content h3 {
+        font-size: 1rem;
+    }
+
+    .alt-content h4 {
+        font-size: 0.8rem;
+        margin-top: 6px;
     }
 }
 
@@ -642,14 +683,6 @@ h1 {
     padding-bottom: 40px !important;
 }
 
-.business-text-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    text-align: end;
-    padding: 60px 0;
-}
 
 .business-text-content h4 {
     font-size: 1rem;
@@ -665,6 +698,7 @@ h1 {
     flex-direction: column;
     align-items: end;
     text-align: end;
+    padding: 60px 0;
 }
 
 .business-text-content h4 {
@@ -734,6 +768,10 @@ h1 {
     .business-image-container {
         left: -20px;
         width: calc(100% + 40px);
+    }
+
+    .business-text-content {
+        padding: 40px 0;
     }
 
     .business-image-container {
@@ -918,6 +956,10 @@ h1 {
     padding: 20px 0;
 }
 
+.banner-row {
+    align-items: center;
+}
+
 .banner-img-box {
     width: 80%;
 }
@@ -945,11 +987,69 @@ h1 {
     font-weight: 500;
 }
 
+@media(max-width:992px) {
+    .banner-section .sub-title {
+        font-size: 1.8rem;
+    }
+
+    .banner-content a span.download-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .fea-dot {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner-section .sub-title {
+        font-size: 1.2rem;
+    }
+
+    .fea-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media(max-width:575px) {
+
+    .banner-row {
+        align-items: unset;
+        flex-direction: column-reverse !important;
+    }
+
+    .banner-section .sub-title {
+        font-size: 0.9rem;
+    }
+
+    .banner-content a span.download-btn {
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+}
+
 /* amenties section  */
 .amenties-section {
     width: 100%;
     position: relative;
     background: linear-gradient(to bottom left, #111839 0%, #222c5f 49%, #111839 100%);
+    color: #fff;
+}
+
+.heading-container {
+    width: 100%;
+    max-width: 870px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading-container h2 {
     color: #fff;
 }
 
@@ -970,12 +1070,85 @@ h1 {
     justify-content: center;
     text-align: center;
     position: relative;
-    border-radius: 20px;
+    border-radius: 15px;
+    border: 2px solid lightcoral;
 }
+
+.amenties-card h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media (max-width:992px) {
+    .heading-container {
+        max-width: 610px;
+    }
+
+    .card-image {
+        width: 80px;
+    }
+}
+
+@media(max-width:767px) {
+    .amenties-card {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .amenties-card h3 {
+        font-size: 1rem;
+    }
+
+    .card-image {
+        width: 60px;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* ____________________architech section________________- */
 .architech-info {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.info-content.lp {
+    padding-left: 125px;
+}
+
+.info-content.rp {
+    padding-right: 125px;
+}
+
+.info-img-wrapper {
+    position: relative;
+    padding: 250px 0;
+}
+
+.info-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.info-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-img h3 {
+    padding: 8px 24px;
+    background: #e2c861;
+    width: fit-content;
+    position: absolute;
+    top: auto;
+    bottom: 1px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1.3rem;
 }

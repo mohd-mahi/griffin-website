@@ -51,6 +51,11 @@ html.lenis body {
   padding: 0 20px;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .padding-section {
   padding: 100px 0;
 
@@ -125,15 +130,23 @@ ul {
   }
 }
 
+
 header.header {
   width: 100%;
   padding: 10px 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(98deg, #111839 0%, #222c5f 49%, #111839 100%);
+  background: linear-gradient(98deg, #111839cc 0%, #222c5fcc 49%, #111839c5 100%);
   z-index: 99999;
+  transition: all 0.4s ease-out;
 }
+
+header.header.sticky {
+  position: fixed;
+  background: linear-gradient(98deg, #111839 0%, #222c5f 49%, #111839 100%);
+}
+
 
 .header-wrapper-container {
   width: 100%;
@@ -144,7 +157,7 @@ header.header {
 
 
 .logo-container a {
-  max-width: 100px;
+  max-width: 110px;
   width: 100%;
   display: block;
 }
