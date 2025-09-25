@@ -1047,7 +1047,8 @@ h1 {
 .amenties-section {
     width: 100%;
     position: relative;
-    background: linear-gradient(to bottom left, #111839 0%, #222c5f 49%, #111839 100%);
+    /* background: linear-gradient(to bottom left, #111839 0%, #222c5f 49%, #111839 100%); */
+    background-color: #1d2652;
     color: #fff;
 }
 
@@ -1083,7 +1084,23 @@ h1 {
     text-align: center;
     position: relative;
     border-radius: 15px;
-    border: 2px solid lightcoral;
+
+}
+
+.amenties-card {
+    border: none;
+    background: linear-gradient(179deg, #e2c861, transparent);
+    z-index: 9;
+    padding-bottom: 20px;
+}
+
+.amenties-card::before {
+    content: '';
+    background: #1d2652;
+    position: absolute;
+    inset: 1px;
+    border-radius: 15px;
+    z-index: -1;
 }
 
 .amenties-card h3 {
