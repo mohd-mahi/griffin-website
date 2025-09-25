@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { useEffect, useRef, useState } from "react";
+import Heading from "../Heading";
 
 const Feature = () => {
   const data = [
@@ -57,14 +58,22 @@ const Feature = () => {
   };
   return (
     <>
-      <section className="feature-section padding-section pt-0 ">
-        <div className="container position-relative padding-section less pb-0 ">
-          <div className="feature-heading ">
+      <section className="feature-section  ">
+        <div className="container position-relative padding-section less ">
+          {/* <div
+            className="feature-heading "
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h2 className="sub-title">
               {" "}
               The benchmark of <br /> brilliance
             </h2>
-          </div>
+         
+          </div> */}
+          <Heading>
+            The benchmark of <br /> brilliance
+          </Heading>
           <div className="feature-wrapper" ref={slideRef}>
             <Swiper
               slidesPerView={1.2}

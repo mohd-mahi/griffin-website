@@ -6,12 +6,17 @@ const Banner = () => {
       <div className="container">
         <div className="row banner-row">
           <div className="col-6">
-            <div className="banner-content">
+            <div
+              className="banner-content"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h2 className="sub-title">
                 Take a glimpse <br /> into grandeur
               </h2>
               <a href="?">
                 <span className="download-btn">Download Brochure</span>
+                <img src="/images/play-button.png" alt="" />
               </a>
             </div>
           </div>

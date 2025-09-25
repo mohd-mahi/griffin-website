@@ -1,11 +1,16 @@
 import React from "react";
+import SecTitle from "../SecTitle";
 
 const BusinessSec = () => {
   return (
     <section className="business-section padding-section">
       <div className="container">
         <div className="row ">
-          <div className="col-lg-6 position-relative">
+          <div
+            className="col-lg-6 position-relative"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <div className="business-image-container">
               <img
                 src="/images/project-page/atlantiis-prj-01.jpg"
@@ -18,10 +23,12 @@ const BusinessSec = () => {
           </div>
           <div className="col-lg-6 position-relative">
             <div className="business-text-content position-relative">
-              <h2 className="sub-title">
-                The future of business <br /> begins here
-              </h2>
-              <p>
+              <SecTitle>
+                The future of business
+                <br />
+                begins here
+              </SecTitle>
+              <p data-aos="fade-up" data-aos-delay="350">
                 {" "}
                 Sangli has a rich legacy of commerce, with many successful
                 businesses and entrepreneurs emerging from this quaint city in
@@ -29,13 +36,13 @@ const BusinessSec = () => {
                 transformation that matches its entrepreneurial values & awaited
                 a change that would elevate it to new heights.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="400">
                 {" "}
                 Presenting a new era of business and commerce. Presenting a
                 symbol of change in the evolving mindset of Sangli towards
                 commerce.
               </p>
-              <h4>
+              <h4 data-aos="fade-up" data-aos-delay="400">
                 {" "}
                 Presenting Atlantiis. Grade A office spaces & showrooms designed
                 for success..

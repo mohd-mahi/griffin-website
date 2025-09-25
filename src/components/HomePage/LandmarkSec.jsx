@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SecTitle from "../SecTitle";
 
 const LandmarkSec = () => {
   return (
@@ -31,14 +32,9 @@ const LandmarkSec = () => {
               <div className="col-sm-6"></div>
               <div className="col-sm-6">
                 <div className="landmark-content">
-                  <h2
-                    className="sub-title text-end"
-                    data-aos="fade-up"
-                    data-aos-delay="250"
-                  >
-                    From the creators of iconic landmarks
-                  </h2>
-                  <p data-aos="fade-up" data-aos-delay="250">
+                  <SecTitle>From the creators of iconic landmarks</SecTitle>
+
+                  <p data-aos="fade-up" data-aos-delay="400">
                     <strong>Griffin in Innfra</strong> is brought to life by the
                     collaborative vision of <strong>Ratna Developers</strong>{" "}
                     and

@@ -1,4 +1,5 @@
 import React from "react";
+import SecTitle from "../SecTitle";
 
 const IntroSec = () => {
   return (
@@ -10,10 +11,13 @@ const IntroSec = () => {
               <div className="intro-bottom-bg-1">
                 <img src="/images/assets-1.png" alt="section-bg" />
               </div>
-              <h2 className="sub-title" data-aos="fade-up" data-aos-delay="250">
-                Introducing the crown <br /> jewel of Sangli
-              </h2>
-              <p data-aos="fade-up" data-aos-delay="300">
+              <SecTitle>
+                Introducing the crown
+                <br />
+                jewel of Sangli
+              </SecTitle>
+
+              <p data-aos="fade-up" data-aos-delay="400">
                 Featuring 11-storey high-rise tower with a modern, eye-catching
                 facade, Atlantiis is a symbol of a new era of commerce, where
                 businesses collaborate and thrive in a space designed to grow
@@ -28,7 +32,7 @@ const IntroSec = () => {
                 <div
                   className="intro-first-img"
                   data-aos="fade-up"
-                  data-aos-delay="250"
+                  data-aos-delay="200"
                 >
                   <img src="/images/home-img.jpg" alt="img-one" />
                 </div>
