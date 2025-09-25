@@ -65,9 +65,9 @@ const Header = () => {
               className="hamburger-menu"
               onClick={() => isOpen(!open)}
             >
-              <span className={`line one ${open ? "active" : ""}`}></span>
-              <span className={`line two ${open ? "active" : ""}`}></span>
-              <span className={`line three ${open ? "active" : ""}`}></span>
+              <span className={`lines one ${open ? "active" : ""}`}></span>
+              <span className={`lines two ${open ? "active" : ""}`}></span>
+              <span className={`lines three ${open ? "active" : ""}`}></span>
             </button>
           </div>
         </div>

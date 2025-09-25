@@ -108,10 +108,10 @@ ul {
   padding: 0;
 }
 
+/* animation line  */
 .line {
   position: relative;
   display: inline-block;
-  /* clip-path: inset(0 0 0 0); */
   line-height: 1.25;
   overflow-y: hidden;
   vertical-align: top;
@@ -132,6 +132,26 @@ ul {
 .whitespace {
   line-height: 0 !important;
 }
+
+.hero-content .word {
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 0.95);
+  transition-delay: 0;
+}
+
+.hero-content h1.aos-animate .word {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 0.95);
+  transition-delay: var(--delay);
+}
+
+/* ____animation ______ */
 
 @media (max-width:1200px) {
   .sub-title {
@@ -250,42 +270,27 @@ button.hamburger-menu {
   z-index: 99999;
 }
 
-span.line {
-  display: inline-block;
-  transition: all 0.25s ease-in-out;
-  transition-delay: 0.2s;
+span.lines {
+  width: 100%;
+  height: 3px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  background-color: #fff;
 }
 
-span.line.two.active {
+span.lines.two.active {
   visibility: hidden;
   opacity: 0;
 }
 
-span.line.one.active {
+span.lines.one.active {
   transform: rotateZ(45deg) translate(6px, 6px);
 }
 
-span.line.three.active {
+span.lines.three.active {
   transform: rotateZ(-45deg) translate(6px, -7px);
 }
 
-.hero-content .word {
-  transform: translate3d(0, 100%, 0);
-  opacity: 0;
-  transition-property: transform, opacity;
-  transition-duration: 1.5s;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 0.95);
-  transition-delay: 0;
-}
-
-.hero-content h1.aos-animate .word {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-  transition-property: transform, opacity;
-  transition-duration: 1.5s;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 0.95);
-  transition-delay: var(--delay);
-}
 
 @media (max-width:992px) {
   .logo-container a {
