@@ -6,7 +6,7 @@ import FounderSec from "../../components/HomePage/FounderSec";
 const Home = () => {
   return (
     <>
-      <HeroSec cl="images/homepage-bg.jpg">
+      <HeroSec cl="hero">
         <h1 data-aos="fade-in">
           <span className="highlight">Expertise</span> THAT SHAPES SKYLINES.
           <span className="highlight"> VISION</span> THAT BUILDS LEGACIES.

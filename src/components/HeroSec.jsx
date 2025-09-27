@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TextSplit from "./TextSplit";
+import { jarallax } from "jarallax";
 
 const HeroSec = ({ children, cl }) => {
+  useEffect(() => {
+    jarallax(document.querySelectorAll(".jarallax"), {
+      speed: 0.5,
+      imgElement: ".parallax-img",
+    });
+  }, []);
   return (
-    <section className="hero-section">
-      
-      <div className="hero-img-container">
-        <img src={cl} alt="" />
-      </div>
+    <section
+      className={`hero-section jarallax ${cl}`}
+      data-swiper-parallax="200"
+      data-jarallax
+      data-speed="0.5"
+    >
       <div className="container ">
         <div className="hero-content-wrapper">
           <div className="hero-content">
