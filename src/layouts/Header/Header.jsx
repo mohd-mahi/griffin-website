@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useLoader } from "../../context/Loader/LoaderContext";
 
 const Header = () => {
   const [open, isOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+  const { handleClickDetect } = useLoader();
 
   const menuData = [
     { label: "Home", path: "/" },
@@ -55,7 +57,13 @@ const Header = () => {
               <ul className="navbar-list">
                 {menuData.map((value, index) => (
                   <li className="navbar-item" key={index}>
-                    <NavLink to={value.path}>{value.label}</NavLink>
+                    <NavLink
+                      to={value.path}
+                      data-transition
+                      onClick={handleClickDetect}
+                    >
+                      {value.label}
+                    </NavLink>
                   </li>
                 ))}
               </ul>
