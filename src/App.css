@@ -199,12 +199,10 @@ header.header {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    98deg,
-    #111839cc 0%,
-    #222c5fcc 49%,
-    #111839c5 100%
-  );
+  background: linear-gradient(98deg,
+      #111839cc 0%,
+      #222c5fcc 49%,
+      #111839c5 100%);
   /* z-index: 99999; */
   z-index: 999;
   transition: all 0.4s ease-out;
@@ -364,6 +362,7 @@ span.lines.three.active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: -1;
 }
 
 .footer-section .container {
@@ -441,6 +440,7 @@ span.lines.three.active {
 }
 
 @media (max-width: 767px) {
+
   .footer-item a,
   .footer-item li {
     font-size: 0.8rem;
@@ -479,7 +479,7 @@ span.lines.three.active {
   padding: 30px;
 }
 
-.loader > img {
+.loader>img {
   max-width: 90px;
   display: block;
   object-fit: cover;
