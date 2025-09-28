@@ -10,7 +10,7 @@
 }
 
 .hero-section.hero {
-  background-image: url("images/homepage-bg.jpg");
+  background-image: url("/images/homepage-bg.jpg");
 }
 
 .hero-section.about {
