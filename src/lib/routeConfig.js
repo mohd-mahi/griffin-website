@@ -11,7 +11,7 @@ export const headerConfig = {
 export const pageTransitionConfig = [
   {
     path: "/",
-    routeTitle: "back to home page",
+    routeTitle: "Welcome",
   },
   {
     path: "/atlantis",

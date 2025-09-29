@@ -10,7 +10,7 @@ import ContactUs from "../../components/ContactUs";
 const AboutUs = () => {
   return (
     <>
-      <HeroSec cl="about">
+      <HeroSec img="/images/about-banner-bg.jpg" cl="about-us">
         <h1 data-aos="fade-in">
           <span className="highlight">A Union</span> of excellence
           <br />

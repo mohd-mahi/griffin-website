@@ -35,6 +35,7 @@ const TransitionWrapper = () => {
 
     if (matchedPage) {
       if (matchedPage.path === "/") {
+        console.log("home page ", matchedPage);
         pageRoutMeta.current.title = isFirstLoad.current
           ? matchedPage.routeTitle
           : "Back to Home Page";
