@@ -60,17 +60,6 @@ const Feature = () => {
     <>
       <section className="feature-section  ">
         <div className="container position-relative padding-section less ">
-          {/* <div
-            className="feature-heading "
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <h2 className="sub-title">
-              {" "}
-              The benchmark of <br /> brilliance
-            </h2>
-         
-          </div> */}
           <Heading>
             The benchmark of <br /> brilliance
           </Heading>

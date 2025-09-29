@@ -50,6 +50,9 @@ const Ameneties = () => {
             </div>
           ))}
         </div>
+        <div className="amen-bottom-icon">
+          <img src="/images/gold-ball-icon.png" alt="" className="gold-ball" />
+        </div>
       </div>
     </section>
   );

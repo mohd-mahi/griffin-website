@@ -60,7 +60,11 @@ const Explore = () => {
               <img src="/images/project-page/atlantiis-ext.jpg" alt="" />
             </div>
           </div>
-          <div className="col-12 explore-btn" data-aos="fade-up">
+          <div
+            className="col-12 explore-btn"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <NavLink to="?">Explore More</NavLink>
           </div>
         </div>
