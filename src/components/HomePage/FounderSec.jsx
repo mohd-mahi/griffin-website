@@ -1,8 +1,20 @@
-import React from "react";
+import { jarallax } from "jarallax";
+import React, { useEffect } from "react";
 
 const FounderSec = () => {
+  useEffect(() => {
+    jarallax(document.querySelectorAll(".jarallax"), {
+      speed: 0.5,
+      imgElement: ".parallax-img",
+    });
+  }, []);
   return (
-    <section className="founder-section padding-section">
+    <section
+      className="founder-section padding-section jarallax"
+      data-swiper-parallax="200"
+      data-jarallax
+      data-speed="0.5"
+    >
       <div className="container">
         <div className="founder-wrapper-container">
           <div className="row px" data-aos="fade-up" data-aos-delay="250">
