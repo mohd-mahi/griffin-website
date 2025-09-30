@@ -36,7 +36,7 @@ const ContactUs = () => {
                 ></textarea>
               </div>
             </div>
-            <div className="contact-button d-none">
+            <div className="contact-button ">
               <button type="submit">Submit</button>
             </div>
           </form>

@@ -6,10 +6,17 @@ import InfoSec from "../../components/AboutPage/InfoSec";
 import ValueSec from "../../components/AboutPage/ValueSec";
 import Masterpiece from "../../components/AboutPage/Masterpiece";
 import ContactUs from "../../components/ContactUs";
+import { Helmet } from "react-helmet";
 
 const AboutUs = () => {
+  // useEffect(() => {
+  //   document.title = "Griffin Innfra - About us";
+  // }, []);
   return (
     <>
+      <Helmet>
+        <title>Griffin Innfra - About us</title>
+      </Helmet>
       <HeroSec img="/images/about-banner-bg.jpg" cl="about-us">
         <h1 data-aos="fade-in">
           <span className="highlight">A Union</span> of excellence

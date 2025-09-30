@@ -1431,6 +1431,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 30px 30px;
 }
 
 .form-group {
@@ -1480,14 +1481,19 @@ h1 {
   max-width: 160px;
   width: 100%;
   font-size: 0.95rem;
-  background: #fff;
-  color: #000;
+  background: var(--theme-color-one);
+  color: #fff;
   border: none;
   font-weight: 500;
   line-height: 1.2;
+  border-radius: 12px;
 }
 
 @media (max-width: 767px) {
+  .form-input-wrapper {
+    padding: 0 20px 20px;
+  }
+
   .form-group {
     width: 100%;
   }
@@ -1778,6 +1784,7 @@ section.info-section .ps {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: visible;
 }
 
 .top-card h3 {
