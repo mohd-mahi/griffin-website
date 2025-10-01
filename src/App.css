@@ -13,8 +13,8 @@
 html,
 body {
   overflow-x: hidden;
-  overscroll-behavior-y: none !important;
   scroll-behavior: auto !important;
+  overscroll-behavior-y: none !important;
 }
 
 body {
