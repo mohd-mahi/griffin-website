@@ -71,6 +71,8 @@ const Feature = () => {
               loop={true}
               speed={1500}
               modules={[Pagination, Navigation]}
+              allowTouchMove={false}
+              touchStartPreventDefault={false}
               className="mySwiper"
               breakpoints={{
                 768: {

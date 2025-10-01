@@ -872,9 +872,6 @@ h1 {
   padding-bottom: 54px;
   overflow: hidden;
   position: relative;
-  touch-action: auto;
-  -ms-touch-action: auto;
-  overscroll-behavior: contain;
 }
 
 .promo-title {
