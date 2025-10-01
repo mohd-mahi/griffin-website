@@ -10,14 +10,17 @@ const Footer = () => {
             <div className="footer-logo">
               <img src="/images/logo.png" alt="footer logo" />
             </div>
-            <div className="footer-title-text">
+            {/* <div className="footer-title-text">
               <span>a venture by</span>
               <ul>
                 <li>
-                  <img src="" alt="" />
+                  <img src="/images/placeholder.png" alt="" />
+                </li>
+                <li>
+                  <img src="/images/placeholder.png" alt="" />
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-2 col-md-6">
             <div className="footer-item">

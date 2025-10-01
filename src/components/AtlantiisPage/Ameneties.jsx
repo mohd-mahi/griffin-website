@@ -38,7 +38,7 @@ const Ameneties = () => {
         <Heading heading="heading">
           Extraordinary. Exclusive. Exceptional. in every way
         </Heading>
-        <div className="row g-lg-5 g-4">
+        <div className="row g-lg-5 g-4 justify-content-center">
           {icons.map((value, index) => (
             <div className="col-lg-3 col-sm-4 col-6" key={index}>
               <div className="amenties-card">

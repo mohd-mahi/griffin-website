@@ -895,6 +895,7 @@ h1 {
 .feature-wrapper .swiper {
   overflow: visible;
   position: static !important;
+  touch-action: pan-y;
 }
 
 .swiper-button-next,
@@ -1087,7 +1088,8 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
+  margin-top: 40px;
 }
 
 .amen-bottom-icon img.gold-ball {
@@ -1884,13 +1886,19 @@ section.info-section .ps {
 }
 
 /* ___________________---masterPiecesection_________________________ */
-.piece-wrapper {
+.masterpiece-section {
   width: 100%;
   position: relative;
   background-image: url("/images/promoter-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+.piece-wrapper {
+  width: 100%;
+  position: relative;
   padding-top: 40px;
   overflow: hidden;
 }
@@ -1917,6 +1925,7 @@ section.info-section .ps {
 .piece-bottom-text {
   width: 100%;
   padding-top: 40px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
