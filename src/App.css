@@ -35,7 +35,7 @@ html.lenis body {
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain !important;
+  overscroll-behavior: contain;
 }
 
 .lenis.lenis-stopped {
