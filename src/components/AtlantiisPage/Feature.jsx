@@ -63,7 +63,7 @@ const Feature = () => {
           <Heading>
             The benchmark of <br /> brilliance
           </Heading>
-          <div className="feature-wrapper" ref={slideRef}>
+          <div className="feature-wrapper" ref={slideRef} data-lenis-prevent>
             <Swiper
               slidesPerView={1.2}
               pagination={pagination}
