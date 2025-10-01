@@ -874,6 +874,7 @@ h1 {
   position: relative;
   touch-action: pan-x;
   -ms-touch-action: pan-x;
+  overscroll-behavior: contain;
 }
 
 .promo-title {
