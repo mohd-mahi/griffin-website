@@ -68,7 +68,7 @@ const Feature = () => {
               slidesPerView={1.2}
               pagination={pagination}
               navigation={true}
-              loop={true}
+              // loop={true}
               speed={1500}
               modules={[Pagination, Navigation]}
               allowTouchMove={false}
