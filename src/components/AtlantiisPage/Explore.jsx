@@ -9,54 +9,54 @@ const Explore = () => {
         <Heading>
           Explore <br /> the project
         </Heading>
-        <div className="row g-3 shd" data-aos="fade-up" data-aos-delay="400">
-          <div className="col-lg-8  col-sm-6">
-            <div className="explore-img-box" data-aos="fade-up">
+        <div className="row g-3" data-aos="fade-up" data-aos-delay="400">
+          <div className="col-lg-8  col-sm-6" data-aos="fade-up">
+            <div className="explore-img-box">
               <img src="/images/project-page/atlantiis-porch.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="explore-img-box"
-              data-aos="fade-up"
-              data-aos-delay="150"
-            >
+          <div
+            className="col-lg-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div className="explore-img-box">
               <img src="/images/project-page/atlantiis-front-ext.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="explore-img-box"
-              data-aos="fade-up"
-              data-aos-delay="250"
-            >
+          <div
+            className="col-lg-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <div className="explore-img-box">
               <img src="/images/project-page/atlantiis-bordview.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-8 col-sm-6">
-            <div
-              className="explore-img-box"
-              data-aos="fade-up"
-              data-aos-delay="350"
-            >
+          <div
+            className="col-lg-8 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <div className="explore-img-box">
               <img src="/images/project-page/atlantiis-terrace.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-8  col-sm-6">
-            <div
-              className="explore-img-box"
-              data-aos="fade-up"
-              data-aos-delay="450"
-            >
+          <div
+            className="col-lg-8  col-sm-6 shd"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <div className="explore-img-box">
               <img src="/images/project-page/atlantiis-lobby.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="explore-img-box"
-              data-aos="fade-up"
-              data-aos-delay="550"
-            >
+          <div
+            className="col-lg-4 col-sm-6 shdn"
+            data-aos="fade-up"
+            data-aos-delay="550"
+          >
+            <div className="explore-img-box">
               <img src="/images/project-page/atlantiis-ext.jpg" alt="" />
             </div>
           </div>
