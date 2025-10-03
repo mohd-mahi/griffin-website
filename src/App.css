@@ -397,9 +397,9 @@ span.lines.three.active {
   }
 
   ul.navbar-list>li {
-    transform: translateX(-40px);
+    transform: translateX(-15px);
     opacity: 0;
-    transition: all .4s ease-in;
+    transition: all .3s ease-in-out;
   }
 
   .active>ul.navbar-list>li {
@@ -412,23 +412,23 @@ span.lines.three.active {
   }
 
   .active>ul.navbar-list>li:nth-child(2) {
-    transition-delay: .9s;
+    transition-delay: .75s;
   }
 
   .active>ul.navbar-list>li:nth-child(3) {
-    transition-delay: 1.2s;
+    transition-delay: .9s;
   }
 
   .active>ul.navbar-list>li:nth-child(4) {
-    transition-delay: 1.5s;
+    transition-delay: 1.05s;
   }
 
   .active>ul.navbar-list>li:nth-child(5) {
-    transition-delay: 1.8s;
+    transition-delay: 1.2s;
   }
 
   .active>ul.navbar-list>li:nth-child(6) {
-    transition-delay: 2.1s;
+    transition-delay: 1.35s;
   }
 }
 
