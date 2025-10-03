@@ -10,25 +10,27 @@ const ValueSec = () => {
       icon: "/images/icons/excellence.png",
     },
     {
-      title: "Honesty",
+      title: "Integrity",
       description:
-        "Upholding honesty and strong moral principles in all our actions.",
+        "We strive for perfection in every detail from design & construction to service & delivery.",
       icon: "/images/icons/honesty.png",
     },
     {
       title: "Innovation",
       description:
-        "Driving progress through creativity, new ideas, and forward thinking.",
+        "We strive for perfection in every detail from design & construction to service & delivery.",
       icon: "/images/icons/innovation.png",
     },
     {
-      title: "Testament",
-      description: "Building a lasting impact that endures beyond generations.",
+      title: "Legacy",
+      description:
+        "We strive for perfection in every detail from design & construction to service & delivery.",
       icon: "/images/icons/testament.png",
     },
     {
       title: "Customer Centricity",
-      description: "Placing customers at the heart of everything we do.",
+      description:
+        "We strive for perfection in every detail from design & construction to service & delivery.",
       icon: "/images/icons/consumer-centric.png",
     },
   ];

@@ -22,6 +22,22 @@
   height: 100%;
   object-fit: cover;
   object-position: right bottom !important;
+  animation: kenburns 20s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  50% {
+    transform: scale(1.3) translate(-5%, -5%);
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
 }
 
 .about-us .hero-bg.jarallax img {
@@ -841,23 +857,41 @@ h1 {
   color: #fff;
   gap: 30px;
   text-decoration: none;
-  transition: all 0.3s ease-in;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transform: scale(1);
   overflow: hidden;
 }
 
-.feature-content:hover.feature-content img {
-  transform: scale(1.2);
+.arti-text {
+  position: absolute;
+  max-width: max-content;
+  right: 14px;
+  top: 14px;
+  font-size: .7rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .486);
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.2;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .18s ease;
 }
 
 .feature-content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.3s ease;
+  transform: scale(1);
+  transition: all 0.6s ease;
+}
+
+.feature-content:hover.feature-content img {
+  transform: scale(1.06);
+}
+
+.feature-content:hover .arti-text {
+  opacity: 1;
 }
 
 .feature-content::before {
@@ -868,6 +902,8 @@ h1 {
   position: absolute;
   left: 0;
   top: 0;
+  opacity: 1;
+  z-index: 2;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -877,7 +913,7 @@ h1 {
 
 .feature-card {
   position: relative;
-  transition: all 03s ease-in;
+  width: 100%;
 }
 
 .feature-wrapper {
@@ -894,6 +930,7 @@ h1 {
   justify-content: space-between;
   position: absolute;
   padding: 25px;
+  z-index: 3;
 }
 
 .promo-title h4 {
@@ -1124,7 +1161,7 @@ h1 {
 }
 
 .card-image {
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -1171,7 +1208,7 @@ h1 {
   }
 
   .card-image {
-    width: 80px;
+    width: 60px;
   }
 }
 
@@ -1186,7 +1223,7 @@ h1 {
   }
 
   .card-image {
-    width: 60px;
+    /* width: 60px; */
     margin-bottom: 20px;
   }
 }
@@ -1233,7 +1270,7 @@ h1 {
 }
 
 .info-img h3 {
-  padding: 8px 24px;
+  padding: 10px 24px;
   background: #e2c861;
   width: fit-content;
   position: absolute;
@@ -1241,7 +1278,8 @@ h1 {
   bottom: 1px;
   margin-bottom: 0;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -1269,19 +1307,48 @@ h1 {
 
   .info-img h3 {
     font-size: 1rem;
-    padding: 6px 18px;
+    padding: 8px 18px;
   }
 }
 
 /* _________________--explore section _________________ */
 .explore-section {
+  width: 100%;
   background: linear-gradient(135deg, #f8e7b9, #e8e1cfea, #f8e7b9);
+}
+
+.explore-card {
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.explore-card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease-in;
+  opacity: 1;
+  z-index: 2;
+}
+
+.explore-card:hover::before {
+  opacity: 0;
+}
+
+.explore-card:hover .arti-text {
+  opacity: 1;
 }
 
 .explore-img-box {
   width: 100%;
   padding: 200px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .explore-img-box img {
@@ -1290,7 +1357,13 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
+  transform: scale(1);
   object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.explore-card:hover .explore-img-box img {
+  transform: scale(1.05);
 }
 
 .shd,
@@ -1301,7 +1374,7 @@ h1 {
 .shd::before,
 .shdn::before {
   content: "";
-  width: 100%;
+  width: calc(100% + 8px);
   height: 100%;
   background: linear-gradient(180deg,
       rgba(0, 0, 0, 0) 30%,
@@ -1313,12 +1386,12 @@ h1 {
 }
 
 .shd::before {
-  left: 8px;
+  left: 0px;
   right: auto;
 }
 
 .shdn::before {
-  right: 8px;
+  right: 0px;
   left: auto;
 }
 
@@ -1401,8 +1474,7 @@ h1 {
   }
 
   .shdn::before {
-    left: 0px;
-    right: 0px;
+    width: 100%;
   }
 }
 

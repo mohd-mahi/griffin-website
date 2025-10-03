@@ -15,8 +15,8 @@ const PartnershipSec = () => {
           <SecTitle>A powerful partnership shaping Sangli’s skyline</SecTitle>
           <p data-aos="fade-up" data-aos-delay="400">
             <strong> Griffin Innfra </strong> is brought to life by the
-            collaborative vision of <strong>Ratna Developers</strong>and
-            <strong>Suyashh</strong>Constructiions-two trusted names shaping
+            collaborative vision of <strong>Ratna Developers </strong>and
+            <strong> Suyashh Constructiions</strong>-two trusted names shaping
             Sangli’s skyline. With deep-rooted values and forward-thinking
             design, Ratna Developers builds on a 70-year Patil family legacy of
             excellence. Since 2013, Suyashh Constructiions has made its mark

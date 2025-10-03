@@ -24,8 +24,8 @@ const Atlantiis = () => {
       <PromoSlide />
       <Banner />
       <Ameneties />
-      <ArchitechInfo />
       <Explore />
+      <ArchitechInfo />
       <Conveniences />
       <ContactUs />
     </>

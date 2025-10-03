@@ -235,6 +235,11 @@ header.header.sticky {
   align-items: center;
 }
 
+.logo-container {
+  position: relative;
+  z-index: 999991;
+}
+
 .logo-container a {
   max-width: 110px;
   width: 100%;
@@ -258,7 +263,7 @@ ul.navbar-list a {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
-  transition: all 0.3s ease-in;
+  transition: all 0.75s ease-in;
 }
 
 ul.navbar-list a:hover,
@@ -337,13 +342,13 @@ span.lines.three.active {
 
   .navbar-container {
     position: fixed;
-    top: 100px;
+    top: 80px;
     right: 0;
     width: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    height: calc(100dvh - 100px);
+    height: 100dvh;
     padding: 0;
     margin: 0;
     z-index: 999991;
@@ -394,7 +399,7 @@ span.lines.three.active {
   ul.navbar-list>li {
     transform: translateX(-40px);
     opacity: 0;
-    transition: all .3s ease-in;
+    transition: all .4s ease-in;
   }
 
   .active>ul.navbar-list>li {
@@ -407,23 +412,23 @@ span.lines.three.active {
   }
 
   .active>ul.navbar-list>li:nth-child(2) {
-    transition-delay: .8s;
+    transition-delay: .9s;
   }
 
   .active>ul.navbar-list>li:nth-child(3) {
-    transition-delay: 1s;
-  }
-
-  .active>ul.navbar-list>li:nth-child(4) {
     transition-delay: 1.2s;
   }
 
+  .active>ul.navbar-list>li:nth-child(4) {
+    transition-delay: 1.5s;
+  }
+
   .active>ul.navbar-list>li:nth-child(5) {
-    transition-delay: 1.4s;
+    transition-delay: 1.8s;
   }
 
   .active>ul.navbar-list>li:nth-child(6) {
-    transition-delay: 1.6s;
+    transition-delay: 2.1s;
   }
 }
 
@@ -438,6 +443,10 @@ span.lines.three.active {
   button.hamburger-menu:has(.active)::before {
     top: -220px;
     right: -100vw;
+  }
+
+  ul.navbar-list a {
+    font-size: 20px;
   }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Heading from "../Heading";
+import ArtistImpression from "../ArtistImpression";
 
 const Explore = () => {
   return (
@@ -11,54 +12,76 @@ const Explore = () => {
         </Heading>
         <div className="row g-3" data-aos="fade-up" data-aos-delay="400">
           <div className="col-lg-8  col-sm-6" data-aos="fade-up">
-            <div className="explore-img-box">
-              <img src="/images/project-page/atlantiis-porch.jpg" alt="" />
-            </div>
+            <a href="#" className="explore-card">
+              <div className="explore-img-box">
+                <img src="/images/project-page/atlantiis-porch.jpg" alt="" />
+              </div>
+
+              <ArtistImpression text="Artist's impression*" />
+            </a>
           </div>
           <div
             className="col-lg-4 col-sm-6"
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <div className="explore-img-box">
-              <img src="/images/project-page/atlantiis-front-ext.jpg" alt="" />
-            </div>
+            <a href="#" className="explore-card">
+              <div className="explore-img-box">
+                <img
+                  src="/images/project-page/atlantiis-front-ext.jpg"
+                  alt=""
+                />
+              </div>
+              <ArtistImpression text="Artist's impression*" />
+            </a>
           </div>
           <div
             className="col-lg-4 col-sm-6"
             data-aos="fade-up"
             data-aos-delay="250"
           >
-            <div className="explore-img-box">
-              <img src="/images/project-page/atlantiis-bordview.jpg" alt="" />
-            </div>
+            <a href="#" className="explore-card">
+              <div className="explore-img-box">
+                <img src="/images/project-page/atlantiis-bordview.jpg" alt="" />
+              </div>
+              <ArtistImpression text="Artist's impression*" />
+            </a>
           </div>
           <div
             className="col-lg-8 col-sm-6"
             data-aos="fade-up"
             data-aos-delay="350"
           >
-            <div className="explore-img-box">
-              <img src="/images/project-page/atlantiis-terrace.jpg" alt="" />
-            </div>
+            <a href="#" className="explore-card">
+              <div className="explore-img-box">
+                <img src="/images/project-page/atlantiis-terrace.jpg" alt="" />
+              </div>
+              <ArtistImpression text="Artist's impression*" />
+            </a>
           </div>
           <div
-            className="col-lg-8  col-sm-6 shd"
+            className="col-lg-8  col-sm-6"
             data-aos="fade-up"
             data-aos-delay="450"
           >
-            <div className="explore-img-box">
-              <img src="/images/project-page/atlantiis-lobby.jpg" alt="" />
-            </div>
+            <a href="#" className="explore-card">
+              <div className="explore-img-box  shd">
+                <img src="/images/project-page/atlantiis-lobby.jpg" alt="" />
+              </div>
+              <ArtistImpression text="Artist's impression*" />
+            </a>
           </div>
           <div
-            className="col-lg-4 col-sm-6 shdn"
+            className="col-lg-4 col-sm-6 "
             data-aos="fade-up"
             data-aos-delay="550"
           >
-            <div className="explore-img-box">
-              <img src="/images/project-page/atlantiis-ext.jpg" alt="" />
-            </div>
+            <a href="#" className="explore-card">
+              <div className="explore-img-box shdn">
+                <img src="/images/project-page/atlantiis-ext.jpg" alt="" />
+              </div>
+              <ArtistImpression text="Artist's impression*" />
+            </a>
           </div>
           <div
             className="col-12 explore-btn"

@@ -35,7 +35,7 @@ const FounderSec = () => {
             <div className="col-6">
               <div className="title mx" data-aos="fade-up" data-aos-delay="300">
                 <img src="/images/gold-ball-icon.png" alt="ball" />
-                <h3>Suyashh Paatil</h3>
+                <h3>Mr. Suyashh Paatil</h3>
               </div>
             </div>
           </div>

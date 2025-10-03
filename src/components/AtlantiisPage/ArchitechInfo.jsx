@@ -86,17 +86,18 @@ const ArchitechInfo = () => {
               {/* <h2 className="sub-title"> </h2> */}
               <SecTitle>From the architect’s desk</SecTitle>
               <p data-aos="fade-up" data-aos-delay="400">
-                Designing Atlantiis on a small plot presented significant
-                challenges, especially with incorporating three levels of
-                underground parking with ramp access. The client required f
-                lexible commercial spaces ranging from 600 to 9000 sq. ft., free
-                of columns and adaptable for MEP services. We addressed these
-                needs through meticulous planning and the use of post-tension
-                technology, ensuring large, open areas. The building optimizes
-                natural light with state-of-the-art façade system, reducing heat
-                on the east and west sides. Designed with energy e ciency and
-                sustainability in mind, Atlantiis promises to set a new standard
-                for commercial developments in Sangli.{" "}
+                Designing Atlantiis on a small plot presented significant The
+                Atlantiis project is a fully commercial development featuring
+                three basement floors for parking and 10 upper floors for varied
+                commercial spaces. To meet the demand for large, column-free
+                areas, we utilized Post-Tensioning Technology for the RCC
+                structure. This allowed for a 16-meter column spacing, providing
+                an uninterrupted floor plate of 9000 sq. ft. The structural
+                system was meticulously designed to comply with high-rise
+                building norms, while ensuring seamless integration of MEP
+                services. The decision to use this structural approach was
+                critical to providing maximum f lexibility in access, parking,
+                and service layouts.
               </p>
             </div>
           </div>

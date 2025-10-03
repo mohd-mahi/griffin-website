@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Heading from "../Heading";
+import ArtistImpression from "../ArtistImpression";
 
 const Feature = () => {
   const data = [
@@ -71,6 +72,7 @@ const Feature = () => {
                     <div className="promo-title">
                       <h4>{item.title}</h4>
                     </div>
+                    <ArtistImpression text="Artist's impression*" />
                   </a>
                 </div>
               </SwiperSlide>
