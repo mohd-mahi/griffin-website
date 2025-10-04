@@ -326,8 +326,8 @@ span.lines.three.active {
     width: 200vw;
     height: 200vw;
     border-radius: 50%;
-    top: 20px;
-    right: 30px;
+    top: 40px;
+    right: 35px;
     background: var(--theme-color-one);
     transform-origin: top right;
     transform: scale(0);
@@ -433,11 +433,25 @@ span.lines.three.active {
 }
 
 @media (max-width:767px) {
+  button.hamburger-menu {
+    width: 25px;
+    height: 30px;
+    gap: 5px;
+  }
+
+  span.lines.one.active {
+    transform: rotateZ(45deg) translate(5px, 4px);
+  }
+
+  span.lines.three.active {
+    transform: rotateZ(-45deg) translate(7px, -7px);
+  }
+
   button.hamburger-menu::before {
-    top: 36px;
+    top: 40px;
     width: 350vw;
     height: 350vw;
-    right: 20px;
+    right: 40px;
   }
 
   button.hamburger-menu:has(.active)::before {
