@@ -1037,6 +1037,10 @@ h1 {
   height: 30px;
 }
 
+.banner-content h2 {
+  letter-spacing: 0;
+}
+
 .banner-content a {
   display: flex;
   align-items: center;
@@ -1099,18 +1103,15 @@ h1 {
 }
 
 @media (max-width: 575px) {
-  .banner-row {
-    align-items: unset;
-    flex-direction: column-reverse !important;
-  }
 
   .banner-section .sub-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .banner-content a span.download-btn {
     padding: 4px 8px;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    font-weight: 400;
   }
 
   .banner-content a {
@@ -1118,7 +1119,7 @@ h1 {
   }
 
   .banner-content a img {
-    width: 18px;
+    width: 15px;
     box-shadow: 0 0 0 2px #dbcb88;
     border-radius: 50%;
   }
@@ -1222,7 +1223,7 @@ h1 {
   }
 
   .card-image {
-    /* width: 60px; */
+    width: 50px;
     margin-bottom: 20px;
   }
 }
@@ -2243,7 +2244,7 @@ section.info-section .ps {
 
 .loader {
   position: relative;
-  /* width: 80px; */
+  width: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2289,7 +2290,7 @@ section.info-section .ps {
 
 @media screen and (max-width: 575px) {
   .loader {
-    width: 60px;
+    width: 70px;
   }
 
   .loader-title {
