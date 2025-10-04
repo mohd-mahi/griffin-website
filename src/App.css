@@ -448,10 +448,10 @@ span.lines.three.active {
   }
 
   button.hamburger-menu::before {
-    top: 40px;
+    top: 35px;
     width: 350vw;
     height: 350vw;
-    right: 40px;
+    right: 30px;
   }
 
   button.hamburger-menu:has(.active)::before {
