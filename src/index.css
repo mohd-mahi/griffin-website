@@ -842,6 +842,10 @@ h1 {
   background-color: #fff;
 }
 
+.feature-section .container.padding-section.less {
+  padding-inline: 20px;
+}
+
 .feature-heading h2 {
   margin-bottom: 0;
 }

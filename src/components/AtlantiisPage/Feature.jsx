@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Heading from "../Heading";
 import ArtistImpression from "../ArtistImpression";
 
 const Feature = () => {
+  const swiperRef = useRef(null);
+
   const data = [
     {
       url: "images/project-page/atlantiis-lobby.jpg",
@@ -36,6 +38,31 @@ const Feature = () => {
     clickable: true,
   };
 
+  useEffect(() => {
+    if (!swiperRef.current) return;
+
+    const swiper = swiperRef.current.swiper;
+
+    if (!swiper) return;
+
+    swiper.on("sliderMove", () => {
+      if (swiper.el) {
+        swiper.el.setAttribute("data-lenis-prevent", "true");
+      }
+    });
+
+    swiper.on("touchEnd", () => {
+      if (swiper.el) {
+        swiper.el.removeAttribute("data-lenis-prevent");
+      }
+    });
+
+    return () => {
+      swiper.off("sliderMove");
+      swiper.off("touchEnd");
+    };
+  }, []);
+
   return (
     <section className="feature-section">
       <div className="container position-relative padding-section less">
@@ -44,6 +71,7 @@ const Feature = () => {
         </Heading>
         <div className="feature-wrapper">
           <Swiper
+            ref={swiperRef}
             slidesPerView={1}
             pagination={pagination}
             navigation={true}
@@ -55,9 +83,6 @@ const Feature = () => {
               768: {
                 slidesPerView: 2,
               },
-              // 992: {
-              //   slidesPerView: 3,
-              // },
             }}
           >
             {data.map((item, i) => (
