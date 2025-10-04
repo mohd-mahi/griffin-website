@@ -76,7 +76,7 @@ const Feature = () => {
             pagination={pagination}
             navigation={true}
             loop={true}
-            speed={1500}
+            speed={500}
             modules={[Pagination, Navigation]}
             className="mySwiper"
             breakpoints={{
