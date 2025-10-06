@@ -38,7 +38,7 @@ const LandmarkSec = () => {
                     <strong>Griffin in Innfra</strong> is brought to life by the
                     collaborative vision of <strong>Ratna Developers</strong>{" "}
                     and
-                    <strong>Suyashh Constructiions</strong> - two trusted names
+                    <strong> Suyashh Constructiions</strong> - two trusted names
                     shaping Sangli’s skyline. With deep-rooted values and
                     forward-thinking design, Ratna Developers builds on a
                     70-year Patil family legacy of excellence.
