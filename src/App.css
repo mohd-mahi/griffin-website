@@ -17,6 +17,10 @@ body {
   overscroll-behavior-y: none !important;
 }
 
+html.with-fancybox {
+  overflow: hidden !important;
+}
+
 body {
   width: 100%;
   position: relative;

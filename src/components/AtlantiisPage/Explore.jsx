@@ -10,7 +10,7 @@ const Explore = () => {
     // Initialize Fancybox
     Fancybox.bind("[data-fancybox='gallery']", {
       Thumbs: false,
-      hideScrollbar: false,
+      // hideScrollbar: false,
       Toolbar: {
         display: [
           { id: "counter", position: "center" },
