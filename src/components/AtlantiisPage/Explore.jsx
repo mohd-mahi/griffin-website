@@ -10,7 +10,8 @@ const Explore = () => {
     // Initialize Fancybox
     Fancybox.bind("[data-fancybox='gallery']", {
       Thumbs: false,
-      // hideScrollbar: false,
+      hideScrollbar: false,
+
       Toolbar: {
         display: [
           { id: "counter", position: "center" },
@@ -24,7 +25,7 @@ const Explore = () => {
       dragToClose: true,
       closeButton: "top",
       showClass: "fancybox-fadeIn",
-      hideClass: "fancybox-fadeOut",
+      // hideClass: "fancybox-fadeOut",
       Carousel: {
         transition: "slide",
         friction: 0.8,
@@ -46,14 +47,14 @@ const Explore = () => {
           {/* 1 */}
           <div className="col-lg-8 col-sm-6" data-aos="fade-up">
             <a
-              href="/images/project-page/atlantiis-porch.jpg"
+              href="/images/atlantiis/atlantiis-porch.jpg"
               data-fancybox="gallery"
               className="explore-card"
             >
               <div className="explore-img-box">
                 <img src="/images/project-page/atlantiis-porch.jpg" alt="" />
               </div>
-              {/* <ArtistImpression text="Artist's impression*" /> */}
+              <ArtistImpression text="Artist's impression*" />
             </a>
           </div>
 
@@ -64,7 +65,7 @@ const Explore = () => {
             data-aos-delay="150"
           >
             <a
-              href="/images/project-page/atlantiis-front-ext.jpg"
+              href="/images/atlantiis/atlantiis-front-ext.jpg"
               data-fancybox="gallery"
               className="explore-card"
             >
@@ -74,7 +75,7 @@ const Explore = () => {
                   alt=""
                 />
               </div>
-              {/* <ArtistImpression text="Artist's impression*" /> */}
+              <ArtistImpression text="Artist's impression*" />
             </a>
           </div>
 
@@ -85,14 +86,14 @@ const Explore = () => {
             data-aos-delay="250"
           >
             <a
-              href="/images/project-page/atlantiis-bordview.jpg"
+              href="/images/atlantiis/atlantiis-bordview.jpg"
               data-fancybox="gallery"
               className="explore-card"
             >
               <div className="explore-img-box">
                 <img src="/images/project-page/atlantiis-bordview.jpg" alt="" />
               </div>
-              {/* <ArtistImpression text="Artist's impression*" /> */}
+              <ArtistImpression text="Artist's impression*" />
             </a>
           </div>
 
@@ -103,14 +104,14 @@ const Explore = () => {
             data-aos-delay="350"
           >
             <a
-              href="/images/project-page/atlantiis-terrace.jpg"
+              href="/images/atlantiis/atlantiis-terrace.jpg"
               data-fancybox="gallery"
               className="explore-card"
             >
               <div className="explore-img-box">
                 <img src="/images/project-page/atlantiis-terrace.jpg" alt="" />
               </div>
-              {/* <ArtistImpression text="Artist's impression*" /> */}
+              <ArtistImpression text="Artist's impression*" />
             </a>
           </div>
 
@@ -121,14 +122,14 @@ const Explore = () => {
             data-aos-delay="450"
           >
             <a
-              href="/images/project-page/atlantiis-lobby.jpg"
+              href="/images/atlantiis/atlantiis-lobby.jpg"
               data-fancybox="gallery"
               className="explore-card"
             >
               <div className="explore-img-box shd">
                 <img src="/images/project-page/atlantiis-lobby.jpg" alt="" />
               </div>
-              {/* <ArtistImpression text="Artist's impression*" /> */}
+              <ArtistImpression text="Artist's impression*" />
             </a>
           </div>
 
@@ -139,14 +140,14 @@ const Explore = () => {
             data-aos-delay="550"
           >
             <a
-              href="/images/project-page/atlantiis-ext.jpg"
+              href="/images/atlantiis/atlantiis-ext.jpg"
               data-fancybox="gallery"
               className="explore-card"
             >
               <div className="explore-img-box shdn">
                 <img src="/images/project-page/atlantiis-ext.jpg" alt="" />
               </div>
-              {/* <ArtistImpression text="Artist's impression*" /> */}
+              <ArtistImpression text="Artist's impression*" />
             </a>
           </div>
 

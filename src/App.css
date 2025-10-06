@@ -10,15 +10,17 @@
   --theme-color-one: #1c2553;
 }
 
+html.with-fancybox {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
 html,
 body {
   overflow-x: hidden;
   scroll-behavior: auto !important;
   overscroll-behavior-y: none !important;
-}
-
-html.with-fancybox {
-  overflow: hidden !important;
+  transform: none !important;
 }
 
 body {
@@ -484,7 +486,7 @@ span.lines.three.active {
 }
 
 .footer-logo {
-  max-width: 130px;
+  max-width: 175px;
 }
 
 .footer-item h3 {
@@ -506,6 +508,7 @@ span.lines.three.active {
 .footer-nav-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
   list-style: none;
   padding-left: 20px;
@@ -553,7 +556,7 @@ span.lines.three.active {
   }
 
   .footer-logo {
-    max-width: 100px;
+    max-width: 120px;
   }
 }
 
