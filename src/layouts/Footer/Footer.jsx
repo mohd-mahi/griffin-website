@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="row justify-content-between gy-5">
           <div className="col-lg-3 col-md-6">
             <div className="footer-logo">
-              <img src="/images/logo.png" alt="footer logo" />
+              <img src="/images/footer-logo.png" alt="footer logo" />
             </div>
             {/* <div className="footer-title-text">
               <span>a venture by</span>

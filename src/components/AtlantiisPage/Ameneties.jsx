@@ -40,7 +40,7 @@ const Ameneties = () => {
     <section className="amenties-section padding-section">
       <div className="container">
         <Heading heading="heading">
-          Extraordinary. Exclusive. Exceptional. in every way
+          Extraordinary. Exclusive. Exceptional. <br /> in every way
         </Heading>
         <div className="row g-lg-5 g-4 justify-content-center">
           {icons.map((value, index) => (

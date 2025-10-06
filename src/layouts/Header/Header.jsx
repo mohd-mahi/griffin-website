@@ -48,7 +48,7 @@ const Header = () => {
       <div className="container">
         <div className="header-wrapper-container">
           <div className="logo-container">
-            <NavLink to="/">
+            <NavLink to="/" data-transition onClick={handleClickDetect}>
               <img src="/images/logo.png" alt="logo" />
             </NavLink>
           </div>

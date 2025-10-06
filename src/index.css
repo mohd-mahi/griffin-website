@@ -15,7 +15,7 @@
   position: absolute !important;
   left: 0;
   top: 0;
-  animation: kenburns 20s ease-in-out infinite;
+  animation: kenburns 30s ease-in-out infinite;
   transform-origin: center;
 }
 
@@ -32,7 +32,7 @@
   }
 
   50% {
-    transform: scale(1.2) translate(-5%, -5%);
+    transform: scale(1.15) translate(-5%, -5%);
   }
 
   100% {
@@ -1197,7 +1197,7 @@ h1 {
 }
 
 .amenties-card h3 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -1210,6 +1210,8 @@ h1 {
   .card-image {
     width: 60px;
   }
+
+
 }
 
 @media (max-width: 767px) {
@@ -1219,7 +1221,7 @@ h1 {
   }
 
   .amenties-card h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .card-image {
@@ -1236,13 +1238,16 @@ h1 {
 }
 
 .info-content.lp {
-  padding-left: 125px;
+  padding-left: 40px;
 }
 
 .info-content.rp {
-  padding-right: 125px;
-  text-align: end;
+  padding-right: 85px;
   padding-left: 20px;
+}
+
+.info-content p {
+  text-align: justify;
 }
 
 .info-content {
@@ -1275,7 +1280,7 @@ h1 {
   width: fit-content;
   position: absolute;
   top: auto;
-  bottom: 1px;
+  bottom: 0;
   margin-bottom: 0;
   color: #fff;
   font-size: 1.5rem;
@@ -1292,7 +1297,7 @@ h1 {
   }
 
   .info-content.rp {
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -1303,6 +1308,10 @@ h1 {
 
   .info-content {
     padding-bottom: 0;
+  }
+
+  .info-content p {
+    text-align: start;
   }
 
   .info-img h3 {
@@ -1317,12 +1326,27 @@ h1 {
   background: linear-gradient(135deg, #f8e7b9, #e8e1cfea, #f8e7b9);
 }
 
+.fancybox__thumbs.f-thumbs.is-modern.is-ltr.is-horizontal.is-enabled {
+  display: none;
+}
+
+.f-button[title="Toggle thumbnails"] {
+  display: none;
+}
+
 .explore-card {
   width: 100%;
   position: relative;
   transition: all 0.3s ease-in;
 }
 
+.explore-card .arti-text {
+  opacity: 1;
+  bottom: 14px;
+  top: auto;
+}
+
+/* 
 .explore-card::before {
   content: "";
   width: 100%;
@@ -1342,7 +1366,7 @@ h1 {
 
 .explore-card:hover .arti-text {
   opacity: 1;
-}
+} */
 
 .explore-img-box {
   width: 100%;
@@ -1357,8 +1381,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  transform: scale(1);
-  object-fit: cover;
+  object-fit: fill;
   transition: all 0.6s ease;
 }
 
@@ -1408,18 +1431,15 @@ h1 {
 .col-12.explore-btn a {
   color: #fff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   display: inline-block;
   margin-bottom: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.col-12.explore-btn a:hover {
-  transform: scale(1.1);
-}
 
 .image-wrapper {
   width: calc(100% + 150px);
@@ -1457,7 +1477,7 @@ h1 {
 
 @media (max-width: 992px) {
   .col-12.explore-btn a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
