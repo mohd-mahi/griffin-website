@@ -929,7 +929,7 @@ h1 {
 }
 
 .promo-title h4 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.2;
   color: #fff;
@@ -1000,11 +1000,15 @@ h1 {
   }
 
   .swiper-button-next {
-    right: 15px;
+    right: 0px;
   }
 
   .swiper-button-prev {
-    right: 50px;
+    right: 35px;
+  }
+
+  .promo-title h4 {
+    font-size: 1.1rem;
   }
 }
 
