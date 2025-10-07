@@ -2359,6 +2359,22 @@ section.info-section .ps {
   height: 100%;
   object-fit: contain;
   object-position: center;
+  animation: move 3s linear infinite;
+}
+
+
+@keyframes move {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
 }
 
 @keyframes pulseDot {
