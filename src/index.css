@@ -2217,6 +2217,14 @@ section.info-section .ps {
     padding-top: 40px;
   }
 
+  .first-piece-wrapper .piece-text-wrapper {
+    padding-inline: 8px 28px;
+  }
+
+  .second-piece-wrapper .piece-text-wrapper {
+    padding-inline: 8px 28px;
+  }
+
   .piece-bottom-text {
     padding-top: 10px;
   }
