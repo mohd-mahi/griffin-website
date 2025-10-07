@@ -11,15 +11,15 @@ export const headerConfig = {
 export const pageTransitionConfig = [
   {
     path: "/",
-    routeTitle: "Welcome",
+    routeTitle: "Welcome to Griffin",
   },
   {
     path: "/atlantis",
-    routeTitle: "atlantiis",
+    routeTitle: "Project Atlantiis",
   },
   {
     path: "/about-us",
-    routeTitle: "Who we are",
+    routeTitle: "About Us",
   },
   {
     path: "/other-projects",

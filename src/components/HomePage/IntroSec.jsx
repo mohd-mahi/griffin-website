@@ -12,9 +12,9 @@ const IntroSec = () => {
                 <img src="/images/assets-1.png" alt="section-bg" />
               </div>
               <SecTitle>
-                Introducing the crown
+                Introducing the Crown
                 <br />
-                jewel of Sangli
+                Jewel of Sangli
               </SecTitle>
 
               <p data-aos="fade-up" data-aos-delay="400">

@@ -25,10 +25,7 @@ const Conveniences = () => {
               </h2>
               <ul>
                 {data.map((item, i) => (
-                  <li key={i}>
-                    <img src="/images/gold-ball-icon.png" alt="" />
-                    {item}
-                  </li>
+                  <li key={i}>{item}</li>
                 ))}
               </ul>
             </div>

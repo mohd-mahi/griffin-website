@@ -118,7 +118,7 @@ ul {
 .line {
   position: relative;
   display: inline-block;
-  line-height: 1.25;
+  line-height: 1;
   overflow-y: hidden;
   vertical-align: top;
 }

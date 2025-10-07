@@ -6,7 +6,7 @@ const Masterpiece = () => {
     <section className="masterpiece-section">
       <div className="first-piece-wrapper piece-wrapper">
         <div className="container">
-          <div className="row align-items-end">
+          <div className="row align-items-center">
             <div className="col-lg-6">
               <div
                 className="piece-img-wrapper"
@@ -18,7 +18,7 @@ const Masterpiece = () => {
             </div>
             <div className="col-lg-6">
               <div className="piece-text-wrapper">
-                <SecTitle> The mind behind the masterpiece</SecTitle>
+                <SecTitle>The mind behind the masterpiece</SecTitle>
                 <div className="piece-bottom-text">
                   <div className="piece-title">
                     <SecTitle>Mr. Rohan Patil</SecTitle>
@@ -33,7 +33,7 @@ const Masterpiece = () => {
                   </div>
                   <img
                     data-aos="fade-up"
-                    data-aos-delay="450"
+                    data-aos-delay="200"
                     src="/images/gold-ball-icon.png"
                     alt=""
                     className="gold-ball"
@@ -46,7 +46,7 @@ const Masterpiece = () => {
       </div>
       <div className="piece-wrapper second-piece-wrapper">
         <div className="container">
-          <div className="row align-items-end flex-column-reverse flex-lg-row">
+          <div className="row align-items-center flex-column-reverse flex-lg-row">
             <div className="col-lg-6">
               <div className="piece-text-wrapper text-start ">
                 <div className="piece-bottom-text align-items-start">
@@ -65,7 +65,7 @@ const Masterpiece = () => {
                     alt=""
                     className="gold-ball"
                     data-aos="fade-up"
-                    data-aos-delay="450"
+                    data-aos-delay="200"
                   />
                 </div>
               </div>

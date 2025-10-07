@@ -357,7 +357,8 @@ const PageTransition = ({ title }) => {
       <div className="page-loader-container" ref={containerRef}>
         <div className="page-loader-panel" ref={loaderPanelRef}></div>
         <div className="loader" ref={loaderLogoRef}>
-          <img src={"/images/logo.png"} alt="" />
+          {/* <img src={"/images/logo.png"} alt="" /> */}
+          <span className="first-title">Loading..</span>
         </div>
         <div className="loader-title">
           <span ref={titleRef}>{title || "Loading.."}</span>
