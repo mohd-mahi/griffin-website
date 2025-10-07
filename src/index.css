@@ -2196,6 +2196,15 @@ section.info-section .ps {
 }
 
 
+@media (max-width:1200px) {
+  .first-piece-wrapper .piece-text-wrapper {
+    padding-left: 20px;
+  }
+
+  .second-piece-wrapper .piece-text-wrapper {
+    padding-right: 20px;
+  }
+}
 
 @media (max-width: 992px) {
   .piece-img-wrapper {
