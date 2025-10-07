@@ -2337,25 +2337,10 @@ section.info-section .ps {
   animation-delay: 0.6s;
 }
 
-@keyframes pulseDot {
-
-  0%,
-  80%,
-  100% {
-    transform: scale(0.6);
-    opacity: 0.3;
-  }
-
-  40% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-}
-
 .loader {
   position: relative;
-  /* width: 90px; */
-  width: max-content;
+  width: 90px;
+  /* width: max-content; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2375,6 +2360,22 @@ section.info-section .ps {
   object-fit: contain;
   object-position: center;
 }
+
+@keyframes pulseDot {
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.3;
+  }
+
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
 
 @media screen and (max-width: 992px) {
   .loader-title {
@@ -2404,9 +2405,9 @@ section.info-section .ps {
 }
 
 @media screen and (max-width: 575px) {
-  /* .loader {
+  .loader {
     width: 70px;
-  } */
+  }
 
   .loader-title {
     font-size: 1.8rem;
