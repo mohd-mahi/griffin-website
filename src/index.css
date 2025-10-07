@@ -718,21 +718,13 @@ h1 {
   padding-bottom: 40px !important;
 }
 
-.business-text-content h4 {
-  font-size: 1rem;
-  max-width: 330px;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #1c1a1ac4;
-}
 
 .business-text-content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  text-align: end;
-  padding: 60px 0;
+  padding-block: 60px;
+  padding-inline: 40px 85px;
 }
 
 .business-text-content h4 {
@@ -744,9 +736,9 @@ h1 {
 }
 
 .business-image-container {
-  width: calc(100% + 130px);
-  position: absolute;
-  left: -130px;
+  width: calc(100% + 20px);
+  position: relative;
+  margin-left: -20px;
   padding: 250px 0;
 }
 
@@ -770,11 +762,12 @@ h1 {
 }
 
 .business-bottom-bg {
-  width: calc(100% + 200px);
+  width: calc(100% + 20px);
   margin-top: -130px;
   position: relative;
   top: 0;
-  right: 60px;
+  right: 0;
+  margin-right: -20px;
 }
 
 .business-bottom-bg::after {
@@ -794,18 +787,19 @@ h1 {
   top: 90%;
 }
 
+@media (max-width:1200px) {
+  .business-text-content {
+    padding-inline: 8px;
+  }
+}
+
 @media (max-width: 992px) {
   .business-image-container {
-    position: relative;
-  }
-
-  .business-image-container {
-    left: -20px;
     width: calc(100% + 40px);
   }
 
   .business-text-content {
-    padding: 20px 0 40px 0;
+    padding-block: 20px 40px;
   }
 
   .business-image-container {
@@ -813,13 +807,12 @@ h1 {
   }
 
   .business-bottom-bg {
-    transform: scaleX(-1);
-    width: 100%;
-    right: 20px;
     position: absolute;
     top: auto;
     bottom: 0;
-    margin-top: 0;
+    margin-top: 40px;
+    z-index: -1;
+
   }
 
   .dot-image {

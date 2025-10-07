@@ -4,7 +4,7 @@ import SecTitle from "../SecTitle";
 const BusinessSec = () => {
   return (
     <section className="business-section padding-section">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row ">
           <div
             className="col-lg-6 position-relative"
