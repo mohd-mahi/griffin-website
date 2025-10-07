@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SecTitle from "../SecTitle";
+import ArtistImpression from "../ArtistImpression";
 
 const LandmarkSec = () => {
   return (
@@ -25,6 +26,7 @@ const LandmarkSec = () => {
         </div>
       </div> */}
       <div className="landmark-bg">
+        <ArtistImpression text="Artist's impression*" />
         <img src="/images/building-cut-bg.png" alt="" />
         <div className="landmar-content-wrapper">
           <div className="container">

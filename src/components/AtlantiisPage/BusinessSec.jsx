@@ -1,5 +1,6 @@
 import React from "react";
 import SecTitle from "../SecTitle";
+import ArtistImpression from "../ArtistImpression";
 
 const BusinessSec = () => {
   return (
@@ -12,6 +13,7 @@ const BusinessSec = () => {
             data-aos-delay="250"
           >
             <div className="business-image-container">
+              <ArtistImpression text="Artist's impression*" />
               <img
                 src="/images/project-page/atlantiis-prj-01.jpg"
                 alt="image"
@@ -28,6 +30,11 @@ const BusinessSec = () => {
                 <br />
                 begins here
               </SecTitle>
+              <h4 data-aos="fade-up" data-aos-delay="400">
+                {" "}
+                Presenting Atlantiis. Grade A office spaces & showrooms designed
+                for success..
+              </h4>
               <p data-aos="fade-up" data-aos-delay="350">
                 {" "}
                 Sangli has a rich legacy of commerce, with many successful
@@ -42,11 +49,6 @@ const BusinessSec = () => {
                 symbol of change in the evolving mindset of Sangli towards
                 commerce.
               </p>
-              <h4 data-aos="fade-up" data-aos-delay="400">
-                {" "}
-                Presenting Atlantiis. Grade A office spaces & showrooms designed
-                for success..
-              </h4>
             </div>
             <div className="business-bottom-bg">
               <img src="/images/assets-2.png" alt="" />

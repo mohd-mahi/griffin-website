@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import TextSplit from "./TextSplit";
 import { jarallax } from "jarallax";
+import ArtistImpression from "./ArtistImpression";
 
 const HeroSec = ({ children, img, cl }) => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const HeroSec = ({ children, img, cl }) => {
           </div>
         </div>
       </div>
+      <ArtistImpression text="Artist's impression*" />
     </section>
   );
 };

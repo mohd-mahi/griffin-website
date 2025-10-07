@@ -1,11 +1,13 @@
 import React from "react";
 import SecTitle from "../SecTitle";
+import Heading from "../Heading";
 
 const Masterpiece = () => {
   return (
-    <section className="masterpiece-section">
+    <section className="masterpiece-section padding-section less pb-0">
       <div className="first-piece-wrapper piece-wrapper">
         <div className="container">
+          <Heading heading="heading">The mind behind the masterpiece</Heading>
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div
@@ -18,7 +20,6 @@ const Masterpiece = () => {
             </div>
             <div className="col-lg-6">
               <div className="piece-text-wrapper">
-                <SecTitle>The mind behind the masterpiece</SecTitle>
                 <div className="piece-bottom-text">
                   <div className="piece-title">
                     <SecTitle>Mr. Rohan Patil</SecTitle>

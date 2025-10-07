@@ -1,4 +1,5 @@
 import React from "react";
+import ArtistImpression from "../ArtistImpression";
 
 const AtlantiisSec = () => {
   return (
@@ -12,6 +13,7 @@ const AtlantiisSec = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
+          <ArtistImpression text="Artist's impression*" />
           <img
             src="/images/building-cut-bg.png"
             alt="building-img"

@@ -1,5 +1,6 @@
 import React from "react";
 import SecTitle from "../SecTitle";
+import ArtistImpression from "../ArtistImpression";
 
 const IntroSec = () => {
   return (
@@ -35,6 +36,7 @@ const IntroSec = () => {
                   data-aos-delay="200"
                 >
                   <img src="/images/home-img.jpg" alt="img-one" />
+                  <ArtistImpression text="Artist's impression*" />
                 </div>
                 <div className="bottom-bg">
                   <div
@@ -43,6 +45,7 @@ const IntroSec = () => {
                     data-aos-delay="300"
                   >
                     <img src="/images/home-img-2.jpg" alt="img-two" />
+                    <ArtistImpression text="Artist's impression*" />
                   </div>
                 </div>
               </div>
