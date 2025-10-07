@@ -1247,6 +1247,10 @@ h1 {
     font-size: 0.9rem;
   }
 
+  .amen-bottom-icon img.gold-ball {
+    width: 20px;
+  }
+
   .card-image {
     width: 50px;
     margin-bottom: 20px;
@@ -1540,7 +1544,7 @@ h1 {
   flex-direction: column;
   gap: 8px;
   list-style: none;
-  padding-left: 10px;
+  padding: 0 2rem;
 }
 
 .conv-content ul li {
@@ -1578,7 +1582,8 @@ h1 {
 
 @media (max-width: 992px) {
   .conv-content {
-    padding: 20px 0;
+    padding-block: 20px;
+    padding-right: 28px;
   }
 }
 
@@ -2127,6 +2132,10 @@ section.info-section .ps {
 .piece-text-wrapper h2 {
   color: #fff;
 }
+
+/* .piece-wrapper .sub-title.heading {
+  color: #e2c861;
+} */
 
 .piece-title {
   padding-bottom: 5rem;
