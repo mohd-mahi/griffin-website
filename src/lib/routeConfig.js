@@ -11,7 +11,7 @@ export const headerConfig = {
 export const pageTransitionConfig = [
   {
     path: "/",
-    routeTitle: "Welcome to Griffin Infra",
+    routeTitle: "Welcome to Griffin Innfra",
   },
   {
     path: "/atlantis",
