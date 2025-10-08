@@ -23,8 +23,8 @@ const BusinessSec = () => {
               <img src="/images/gold-ball-icon.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-6 position-relative">
-            <div className="business-text-content position-relative">
+          <div className="col-lg-6 position-relative px-0">
+            <div className="business-text-content position-relative pl-side">
               <SecTitle>
                 The future of business
                 <br />

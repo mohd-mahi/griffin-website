@@ -746,7 +746,6 @@ h1 {
   display: flex;
   flex-direction: column;
   padding-block: 60px;
-  padding-inline: 40px 85px;
 }
 
 .business-text-content h4 {
@@ -786,12 +785,12 @@ h1 {
 }
 
 .business-bottom-bg {
-  width: calc(100% + 20px);
+  width: 100%;
   margin-top: -130px;
   position: relative;
   top: 0;
   right: 0;
-  margin-right: -20px;
+  padding-inline: 24px 0;
 }
 
 .business-bottom-bg::after {
@@ -813,11 +812,6 @@ h1 {
   transform: translateX(-50%);
 }
 
-@media (max-width:1200px) {
-  .business-text-content {
-    padding-inline: 20px;
-  }
-}
 
 @media (max-width: 992px) {
   .business-image-container {
@@ -826,7 +820,6 @@ h1 {
 
   .business-text-content {
     padding-block: 20px 40px;
-    padding-inline: 8px 28px;
   }
 
   .business-image-container {
@@ -1332,9 +1325,12 @@ h1 {
 }
 
 @media (max-width: 992px) {
-  .architech-info .col-lg-6 {
+
+  .architech-info .col-lg-6.pe-0,
+  .architech-info .col-lg-6.ps-0 {
     padding: 0;
   }
+
 
   .info-content {
     padding-bottom: 0;
@@ -1587,6 +1583,16 @@ h1 {
   }
 }
 
+@media(max-width:575px) {
+  .conv-content {
+    padding-right: 0px;
+  }
+
+  .conv-content ul {
+    padding-inline: 1.5rem 0;
+  }
+}
+
 /* _____________contact us ____________________- */
 .contact-section {
   width: 100%;
@@ -1817,14 +1823,10 @@ h1 {
 }
 
 .info-text-content.pr {
-  padding-right: 85px;
-  padding-left: 40px;
   position: relative;
 }
 
 .info-text-content.pl {
-  padding-right: 40px;
-  padding-left: 85px;
   align-items: start;
   text-align: start;
 }
@@ -1894,18 +1896,6 @@ section.info-section .ps {
   right: auto;
 }
 
-@media (max-width:1200px) {
-  .info-text-content.pr {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .info-text-content.pl {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
 @media (max-width: 992px) {
   .img-child-container {
     padding: 0;
@@ -1930,15 +1920,7 @@ section.info-section .ps {
   .info-text-content.pl {
     padding-inline: 10px;
   } */
-  section.info-section .info-text-content.pr {
-    padding-right: 28px;
-    padding-left: 8px;
-  }
 
-  section.info-section .info-text-content.pl {
-    padding-right: 28px;
-    padding-left: 8px;
-  }
 
 
 

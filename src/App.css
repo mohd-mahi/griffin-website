@@ -72,6 +72,14 @@ html.lenis body {
   }
 }
 
+.pl-side {
+  padding-inline: 40px 85px;
+}
+
+.pr-side {
+  padding-inline: 85px 40px;
+}
+
 img {
   width: 100%;
 }
@@ -165,6 +173,14 @@ ul {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
+
+  .pl-side {
+    padding-inline: 20px 40px;
+  }
+
+  .pr-side {
+    padding-inline: 40px 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -183,6 +199,14 @@ ul {
 
   p {
     font-size: 0.9rem;
+  }
+
+  .pl-side {
+    padding-inline: 20px 40px;
+  }
+
+  .pr-side {
+    padding-inline: 20px 40px;
   }
 }
 

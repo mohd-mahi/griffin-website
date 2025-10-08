@@ -4,7 +4,7 @@ import { useLoader } from "../../context/Loader/LoaderContext";
 const PageWrapper = ({ children }) => {
   const { isClickDetected, setPageComponentReady } = useLoader();
 
-  const delay = isClickDetected ? 1000 : 1500;
+  const delay = isClickDetected ? 1000 : 1000;
 
   useEffect(() => {
     setPageComponentReady(true);

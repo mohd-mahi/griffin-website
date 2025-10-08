@@ -43,8 +43,8 @@ const animatePanel = {
 
 const animateOverlay = {
   initial: { opacity: 0, display: "block" },
-  enter: { opacity: 1, duration: 0.6 },
-  exit: { opacity: 0, duration: 0.6 },
+  enter: { opacity: 1 },
+  exit: { opacity: 0 },
 };
 
 const PageTransition = ({ title }) => {
@@ -78,7 +78,7 @@ const PageTransition = ({ title }) => {
     gsap.set(overlayRef.current, { ...animateOverlay.initial });
   };
 
-  // 🔹 PAGE RELOAD (Only Title)
+  // 🔹 PAGE RELOAD (Panel stays at top and exits bottom → top)
   useLayoutEffect(() => {
     if (!isFirstLoading.current) return;
 
@@ -92,17 +92,29 @@ const PageTransition = ({ title }) => {
     onLoadTimelineRef.current = tl;
 
     const ctx = gsap.context(() => {
-      setInitialStyles();
+      // ✅ Panel visible from TOP by default
+      gsap.set(panel, { scaleY: 1, transformOrigin: "top" });
+      gsap.set(overlay, { ...animateOverlay.initial });
+      gsap.set(loaderTitle, { ...animateLoaderTitle.initial });
 
       tl.to(overlay, animateOverlay.enter, 0)
-        .to(panel, animatePanel.enter, 0)
         // Wait till images load
         .addPause("waitTillLoading")
         .call(() => setTlPaused(true))
-        // Title animation once
+        // Title animation
         .to(loaderTitle, animateLoaderTitle.enter)
-        .to(loaderTitle, animateLoaderTitle.exit, "+=0.5") // Small delay before exit
-        .to(panel, animatePanel.exit, "-=0.3")
+        .to(loaderTitle, animateLoaderTitle.exit, "+=0.5")
+        // ✅ Exit: panel goes bottom → top
+        .to(
+          panel,
+          {
+            scaleY: 0,
+            transformOrigin: "top", // 🔥 key fix
+            duration: 1,
+            ease: "power4.inOut",
+          },
+          "-=0.2"
+        )
         .to(overlay, animateOverlay.exit, "<")
         .call(() => {
           setMounted(true);
@@ -134,6 +146,7 @@ const PageTransition = ({ title }) => {
     routeTimelineRef.current = tl;
 
     const ctx = gsap.context(() => {
+      // ✅ Navigation behaves normally
       tl.to(overlay, animateOverlay.enter, 0)
         .to(panel, animatePanel.enter, 0)
         .to(logo, animateLogo.enter)
@@ -144,6 +157,7 @@ const PageTransition = ({ title }) => {
         .call(() => setRouteTimelinePaused(true))
         .call(resetScroll)
         .to(loaderTitle, animateLoaderTitle.exit)
+        // Exit top → bottom (as before)
         .to(panel, animatePanel.exit, "-=0.4")
         .to(overlay, animateOverlay.exit, "<")
         .call(() => setMounted(true), [], "-=0.3");
@@ -157,7 +171,7 @@ const PageTransition = ({ title }) => {
     if (!isLoading && tlPaused && onLoadTimelineRef.current) {
       imagesLoaded(document.body, () => {
         onLoadTimelineRef.current.play("waitTillLoading");
-        setTlPaused(false); // prevent replaying
+        setTlPaused(false);
       });
     }
   }, [isLoading, tlPaused]);

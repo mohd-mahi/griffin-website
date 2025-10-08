@@ -17,7 +17,7 @@ const InfoSec = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 pl-side">
             <div className="info-text-content pr">
               <div className="info-text">
                 <SecTitle>Our Vision</SecTitle>
@@ -38,7 +38,7 @@ const InfoSec = () => {
           </div>
         </div>
         <div className="row  padding-section less flex-column-reverse flex-lg-row gy-3 pb-0">
-          <div className="col-lg-6">
+          <div className="col-lg-6 pr-side">
             <div className="info-text-content pl">
               <div className="info-text">
                 <SecTitle>Our Mission</SecTitle>

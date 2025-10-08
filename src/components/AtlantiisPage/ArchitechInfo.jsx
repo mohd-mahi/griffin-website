@@ -8,18 +8,8 @@ const ArchitechInfo = () => {
     <section className="architech-info padding-section pb-0">
       <div className="container-fluid">
         <div className="row flex-column-reverse flex-lg-row">
-          <div className="col-lg-6 position-relative">
-            <div className="info-content lp">
-              {/* <TextSplit revealType="word">
-                <h2
-                  className="sub-title"
-                  data-aos="fade-in"
-                  style={{ "--delaySecond": `${delaySecond}ms` }}
-                >
-                  From the architect’s desk From the architect’s deskFrom the
-                  architect’s desk
-                </h2>
-              </TextSplit> */}
+          <div className="col-lg-6 position-relative pr-side">
+            <div className="info-content">
               <SecTitle>From the architect’s desk </SecTitle>
               <p data-aos="fade-up" data-aos-delay="400">
                 Designing Atlantiis on a small plot presented significant
@@ -68,8 +58,8 @@ const ArchitechInfo = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 position-relative">
-            <div className="info-content rp">
+          <div className="col-lg-6 position-relative pl-side">
+            <div className="info-content">
               {/* <h2 className="sub-title"> </h2> */}
               <SecTitle>From the architect’s desk</SecTitle>
               <p data-aos="fade-up" data-aos-delay="400">
