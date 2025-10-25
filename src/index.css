@@ -1520,12 +1520,16 @@ h1 {
 }
 
 @media (max-width: 575px) {
-  .shd::before {
+  /* .shd::before {
     display: none;
-  }
+  } */
 
   .shdn::before {
     width: 100%;
+  }
+
+  .explore-img-box {
+    padding: 120px 0;
   }
 }
 

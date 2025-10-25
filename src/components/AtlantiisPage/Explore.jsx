@@ -45,7 +45,7 @@ const Explore = () => {
 
         <div className="row g-3" data-aos="fade-up" data-aos-delay="400">
           {/* 1 */}
-          <div className="col-lg-8 col-sm-6" data-aos="fade-up">
+          <div className="col-lg-8 col-6" data-aos="fade-up">
             <a
               href="/images/atlantiis/atlantiis-porch.jpg"
               data-fancybox="gallery"
@@ -60,7 +60,7 @@ const Explore = () => {
 
           {/* 2 */}
           <div
-            className="col-lg-4 col-sm-6"
+            className="col-lg-4 col-6"
             data-aos="fade-up"
             data-aos-delay="150"
           >
@@ -81,7 +81,7 @@ const Explore = () => {
 
           {/* 3 */}
           <div
-            className="col-lg-4 col-sm-6"
+            className="col-lg-4 col-6"
             data-aos="fade-up"
             data-aos-delay="250"
           >
@@ -99,7 +99,7 @@ const Explore = () => {
 
           {/* 4 */}
           <div
-            className="col-lg-8 col-sm-6"
+            className="col-lg-8 col-6"
             data-aos="fade-up"
             data-aos-delay="350"
           >
@@ -117,7 +117,7 @@ const Explore = () => {
 
           {/* 5 */}
           <div
-            className="col-lg-8 col-sm-6"
+            className="col-lg-8 col-6"
             data-aos="fade-up"
             data-aos-delay="450"
           >
@@ -135,7 +135,7 @@ const Explore = () => {
 
           {/* 6 */}
           <div
-            className="col-lg-4 col-sm-6"
+            className="col-lg-4 col-6"
             data-aos="fade-up"
             data-aos-delay="550"
           >

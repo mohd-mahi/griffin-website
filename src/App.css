@@ -333,6 +333,7 @@ span.lines.two.active {
   opacity: 0;
 }
 
+
 span.lines.one.active {
   transform: rotateZ(45deg) translate(6px, 6px);
 }
